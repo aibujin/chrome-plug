@@ -1,0 +1,47 @@
+.btn-container {
+    display: flex;
+}
+
+button {
+    height: 30px;
+    width: 30px;
+    outline: none;
+    margin: 10px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+img {
+    margin-right: 16px;
+    width: 120px;
+}
+
+.button-1 {
+    background: #FFCCCC;
+}
+
+.button-2 {
+    background: #FFEE99;
+}
+
+.button-3 {
+    background: #CCFF99;
+}
+
+.button-4 {
+    background: #BBFFEE;
+}
+
+.button-5 {
+    background: #CCCCFF;
+}
+
+.button-6 {
+    background: #F0BBFF;
+}

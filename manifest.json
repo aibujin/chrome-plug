@@ -1,0 +1,63 @@
+{
+    "name": "CustChromePlug",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "Customize Google plug-in demo !",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "64": "icons/icon64.png",
+        "128": "icons/icon128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.baidu.com/*",
+                "http://www.baidu.com/*"
+            ],
+            "js": [
+                "js/baidu.js"
+            ],
+            "css": [],
+            "run_at": "document_idle"
+        }
+    ],
+    "action": {
+        // "default_title": "CustChromePlug popup",
+        // "default_popup": "popup.html",
+        // "default_icon": {
+        //     "16": "icons/icon16.png",
+        //     "32": "icons/icon32.png",
+        //     "48": "icons/icon48.png",
+        //     "64": "icons/icon64.png",
+        //     "128": "icons/icon128.png"
+        // }
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "notifications",
+        "contextMenus",
+        "declarativeContent"
+    ],
+    "options_page": "options.html",
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "image/*"
+            ],
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ]
+        }
+    ],
+    "omnibox": {
+        "keyword": "aibujin"
+    }
+}
